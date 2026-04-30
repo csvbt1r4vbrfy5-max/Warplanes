@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import MovingBackground from "@/components/MovingBackground";
 
 export const metadata: Metadata = {
   title: "WARPLANES — Military Aviation Encyclopedia",
@@ -20,9 +21,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-full flex flex-col bg-[#050505]">
+      <body className="min-h-full flex flex-col bg-[#020204]">
+        <MovingBackground />
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
