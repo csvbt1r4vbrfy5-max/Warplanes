@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import MovingBackground from "@/components/MovingBackground";
 
 export const metadata: Metadata = {
-  title: "WARPLANES — Military Aviation Encyclopedia",
+  title: "موسوعة الطيران العسكري — Military Aviation Encyclopedia",
   description:
-    "A classified-grade military aviation encyclopedia featuring 16 iconic warplanes, specifications, combat comparison tools, and historical evolution timeline.",
+    "موسوعة عسكرية شاملة تضم 16 من أشهر الطائرات الحربية، المواصفات التقنية، أداة مقارنة قتالية، وجدول زمني للتطور التاريخي.",
   keywords:
-    "military aviation, fighter jets, stealth bombers, combat UAVs, reconnaissance aircraft, F-22 Raptor, B-2 Spirit, SR-71 Blackbird",
+    "طيران عسكري, طائرات مقاتلة, قاذفات شبحية, طائرات بدون طيار, F-22 Raptor, B-2 Spirit, SR-71 Blackbird",
 };
 
 export default function RootLayout({
@@ -21,10 +20,9 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-full flex flex-col bg-[#020204]">
-        <MovingBackground />
+      <body className="min-h-full flex flex-col bg-[#050505]">
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
