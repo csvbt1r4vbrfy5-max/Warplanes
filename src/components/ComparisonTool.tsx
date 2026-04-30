@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Swatches, Gauge, Map, ShieldAlert, Target, Zap, Swords } from "lucide-react";
+import { LayoutGrid, Gauge, Map, ShieldAlert, Target, Zap, Swords } from "lucide-react";
 import { aircraftData, type Aircraft, specMaxValues } from "@/data/aircraft";
 import { Card } from "@/components/ui/card";
 import {
