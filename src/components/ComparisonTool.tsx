@@ -43,7 +43,7 @@ export default function ComparisonTool() {
           <label className="text-[10px] text-matrix/60 uppercase tracking-[0.2em] block">
             UNIT_ALPHA_SELECT
           </label>
-          <Select onValueChange={setAlphaId} value={alphaId}>
+          <Select onValueChange={(val) => setAlphaId(val || "")} value={alphaId}>
             <SelectTrigger className="bg-black/80 border-matrix/30 text-matrix font-mono text-xs h-12 focus:ring-matrix/30 rounded-none transition-all w-full">
               <SelectValue>
                 {alpha ? `${alpha.name}` : "— CHOOSE_UNIT —"}
@@ -73,7 +73,7 @@ export default function ComparisonTool() {
           <label className="text-[10px] text-matrix/60 uppercase tracking-[0.2em] block">
             UNIT_BRAVO_SELECT
           </label>
-          <Select onValueChange={setBravoId} value={bravoId}>
+          <Select onValueChange={(val) => setBravoId(val || "")} value={bravoId}>
             <SelectTrigger className="bg-black/80 border-matrix/30 text-matrix font-mono text-xs h-12 focus:ring-matrix/30 rounded-none transition-all w-full">
               <SelectValue>
                 {bravo ? `${bravo.name}` : "— CHOOSE_UNIT —"}
