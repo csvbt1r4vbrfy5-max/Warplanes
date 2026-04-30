@@ -33,9 +33,9 @@ export default function AircraftDashboard({ aircraft }: AircraftDashboardProps) 
                 <img 
                   src={aircraft.imageUrl} 
                   alt={aircraft.name} 
-                  className="w-full h-full object-cover opacity-70"
+                  className="w-full h-full object-cover opacity-90 brightness-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]" />
+                <div className="absolute inset-0 bg-black/40" />
               </div>
             )}
 
@@ -69,15 +69,15 @@ export default function AircraftDashboard({ aircraft }: AircraftDashboardProps) 
       </AnimatePresence>
 
       {/* ─── Header Section ────────────────────────────────────────────────── */}
-      <Card className="relative overflow-hidden bg-[rgba(10,10,15,0.8)] border-[#1a1a25] p-8 md:p-12 group">
+      <Card className="relative overflow-hidden bg-[rgba(10,10,15,0.85)] border-[#1a1a25] p-8 md:p-12 group">
         {/* Background Aircraft Image */}
         {aircraft.imageUrl && (
-          <div className="absolute inset-0 z-0 opacity-40 group-hover:opacity-60 transition-opacity duration-700">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-transparent to-[#050505] z-10" />
+          <div className="absolute inset-0 z-0 opacity-60 group-hover:opacity-80 transition-opacity duration-700">
+            <div className="absolute inset-0 bg-black/20 z-10" />
             <img 
               src={aircraft.imageUrl} 
               alt={aircraft.name} 
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-center brightness-110"
             />
           </div>
         )}
