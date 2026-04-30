@@ -22,7 +22,7 @@ export default function OperatorsBar({ operators }: OperatorsBarProps) {
           {/* Repeat multiple times for seamless marquee */}
           {[...operators, ...operators, ...operators].map((op, i) => (
             <div key={i} className="flex items-center gap-4 shrink-0 px-6 py-3 bg-white/[0.02] border border-white/5 rounded-2xl hover:border-[#ff4d00]/30 transition-colors">
-              <span className="text-3xl filter grayscale group-hover:grayscale-0 transition-all duration-500">
+              <span className="text-3xl transition-all duration-500">
                 {op.flag}
               </span>
               <div className="text-right">
