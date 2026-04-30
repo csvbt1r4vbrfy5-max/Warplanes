@@ -33,9 +33,9 @@ export default function AircraftDashboard({ aircraft }: AircraftDashboardProps) 
                 <img 
                   src={aircraft.imageUrl} 
                   alt={aircraft.name} 
-                  className="w-full h-full object-cover opacity-90 brightness-110"
+                  className="w-full h-full object-cover opacity-85 brightness-110"
                 />
-                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 bg-black/30" />
               </div>
             )}
 
@@ -72,8 +72,8 @@ export default function AircraftDashboard({ aircraft }: AircraftDashboardProps) 
       <Card className="relative overflow-hidden bg-[rgba(10,10,15,0.85)] border-[#1a1a25] p-8 md:p-12 group">
         {/* Background Aircraft Image */}
         {aircraft.imageUrl && (
-          <div className="absolute inset-0 z-0 opacity-60 group-hover:opacity-80 transition-opacity duration-700">
-            <div className="absolute inset-0 bg-black/20 z-10" />
+          <div className="absolute inset-0 z-0 opacity-85">
+            <div className="absolute inset-0 bg-black/10 z-10" />
             <img 
               src={aircraft.imageUrl} 
               alt={aircraft.name} 
